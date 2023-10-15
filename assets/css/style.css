@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* MEME BOX POPUP STYLES BEGIN */
+.memeBox>*,.memeBox{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+.memeBox h1{ 
+font-family: 'Poppins', sans-serif;
+color: #00C987;
+}
+.memeBox{
+    width: 500px; 
+    border-radius: 5px;
+    padding: 30px; 
+    margin: 15px 0;
+    background: #062D28;
+}
+.memeBox img{
+width: 200px;
+height: 200px;
+border-radius: 5px;
+display: block;
+}
+
+#app{
+    background: #fff;
+    display: grid;
+    width: 500px;
+    height: 300px;
+    place-content: center; 
+    max-width: 500px;
+}
+.memeBox h3{
+    font-size: 20px;
+    display: block;
+    margin: 20px 0;
+    font-weight: 600;
+    color: #fff;
+}
+.memeBox small{
+    font-size: 15px;
+    color: #00C987;
+    margin: 20px 0;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    color: #FFF;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    background-color: #00C987;
+    border-radius: 50%;
+    animation: scale50 1s infinite ease-in-out;
+  }
+  .loader::before {
+    top: auto;
+    bottom: 0;
+    background-color: #062D28;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes scale50 {
+    0%, 100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  } 
+/* MEME BOX POPUP STYLES BEGIN */
